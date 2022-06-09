@@ -1,0 +1,32 @@
+General:
+  bin-directory: 'c:\Program Files (x86)\Deltares\Wanda 4.6\Bin\'
+  number_of_processes: 8
+ 
+model:
+    model-file: 'd:\projecten\calibration\model\CAPWAT_242b.wdi'
+    population_size: 4
+measurements:
+    measurement-data: 'd:\projecten\calibration\measurement_data\twin_data.xlsx'
+    locations:
+        - H-node P5
+        - H-node P1
+        - H-node P4
+        - H-node P2
+    quantity:
+        - Pressure
+        - Pressure
+        - Pressure
+        - Pressure
+parameter:
+    components: 
+        - leiding
+        - leiding
+    property:
+        - Specified wave speed
+        - Wall roughness
+    maximum:
+        - 400
+        - 0.7
+    minimum:
+        - 300
+        - 0.1
