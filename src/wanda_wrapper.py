@@ -78,7 +78,7 @@ class WandaWrapperGA(ModelWrapperGA):
                 prop = model.get_node(meas_series.location).get_property(meas_series.property)
             #self.simulated_series.append([x * prop.get_unit_factor() for x in prop.get_series()])
             # unti factor seems not te be workign therefore disabled for now.
-            self.simulated_series.append([x for x in prop.get_series()])
+            self.simulated_series.append([x * prop.get_unit_factor() for x in prop.get_series()])
             RMSE = 0.0
             for (sim_val, meas_val) in zip(self.simulated_series[-1], meas_series.values):
                 RMSE += pow(sim_val - meas_val, factor)

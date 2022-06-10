@@ -4,3 +4,5 @@ pywanda~=4.7.0.dev1
 epynet~=1.1
 PyYAML~=5.4.1
 pandas~=1.2.2
+openpyxl~=3.0.10
+kaleido~=0.2.1

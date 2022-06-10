@@ -1,7 +1,8 @@
 General:
   bin-directory: 'c:\Program Files (x86)\Deltares\Wanda 4.6\Bin\'
   number_of_processes: 8
- 
+  results_folder: 'd:\projecten\calibration\model\'
+
 model:
     model-file: 'd:\projecten\calibration\model\CAPWAT_242b.wdi'
     population_size: 4
